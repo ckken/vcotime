@@ -1,0 +1,55 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org">
+<head>
+    <meta charset="utf-8">
+    <title>{{global.site.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="app/lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="statics/css/style.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="app/lib/html5/html5shiv.js"></script>
+    <script src="app/lib/html5/respond.js"></script>
+    <![endif]-->
+<script>
+    <!--[if lte IE 8]>
+    document.createElement('ng-include');
+    document.createElement('ng-pluralize');
+    document.createElement('ng-view');
+    // Optionally these for CSS
+    document.createElement('ng:include');
+    document.createElement('ng:pluralize');
+    document.createElement('ng:view');
+    <![endif]-->
+</script>
+</head>
+<body>
+
+<header class="navbar navbar-inverse navbar-fixed-top cknav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span
+                    class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <a href="/" class="navbar-brand">维酷网络</a></div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:global.isActive=='home'}"><a href="/">首页</a></li>
+                <li ng-class="{active:global.isActive=='about'}"><a href="/aboutus">关于</a></li>
+                <li ng-class="{active:global.isActive=='product'}"><a href="/product">套餐</a></li>
+                <li ng-class="{active:global.isActive=='contact'}"><a href="/contact">联系</a></li>
+                <li ng-class="{active:global.isActive=='demo'}"><a href="/demo">展示</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<div ng-view></div>
+<script src="app/lib/jquery/jquery.js"></script>
+<script src="app/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="app/style/bootstrap_init.js"></script>
+<script src="app/lib/sea/sea.js" id="seajsnode"></script>
+<script src="app/seaConfig.js"></script>
+</body>
+</html>

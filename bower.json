@@ -1,0 +1,10 @@
+{
+    "name": "VCO",
+    "version": "0.0.1",
+    "author": "KenZR <ckken@qq.com>",
+    "description": "vcotime office web site, support seajs/angularjs/nodejs.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ckken/vco"
+    }
+}

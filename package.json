@@ -1,0 +1,30 @@
+{
+    "name": "VCO",
+    "version": "0.0.1",
+    "author": "KenZR <ckken@qq.com>",
+    "description": "vcotime office web site, support seajs/angularjs/nodejs.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ckken/vco"
+    },
+    "devDependencies": {
+
+        "express": "*",
+        "ejs": "*",
+        "mongoose": "*",
+        "nodemailer": "*",
+        "thenjs": "*",
+        "grunt": "latest",
+        "grunt-contrib-clean": "latest",
+        "grunt-contrib-concat": "latest",
+        "grunt-contrib-copy": "latest",
+        "grunt-contrib-connect": "latest",
+        "grunt-contrib-htmlmin": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-watch": "latest",
+        "matchdep": "latest",
+        "connect-livereload": "latest",
+        "connect-route": "latest",
+        "shelljs": "latest"
+    }
+}

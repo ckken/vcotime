@@ -1,0 +1,1 @@
+require(__dirname + "/ANS/ANS").init(__dirname);
